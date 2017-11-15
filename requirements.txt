@@ -20,7 +20,6 @@ pefile==2017.11.5
 py==1.4.34
 pygal==2.4.0
 pygal-maps-world==1.0.2
-pygame==1.9.4.dev0
 PyInstaller==3.3
 pyparsing==2.2.0
 python-dateutil==2.6.1
