@@ -23,9 +23,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '_l70f)3-2e&s-*=eh(s71(x=8+se5!=vf^59q_q1(9+ti@b6f9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
-ALLOWED_HOSTS = ['learning-log01.herokuapp.com']
+DEBUG = True
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -59,7 +58,7 @@ ROOT_URLCONF = 'learning_log.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'lerning_log/templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'learning_log/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -145,8 +144,8 @@ if cwd == '/app' or cwd[:4] == '/tmp':
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
     # Only allow heroku to host the project.
-    ALLOWED_HOSTS = ['learning-log-final.herokuapp.com']
-    DEBUG = False
+    ALLOWED_HOSTS = ['learning-log01.herokuapp.com']
+    DEBUG = True
 
     # Static asset configuration
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
